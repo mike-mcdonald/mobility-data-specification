@@ -374,6 +374,7 @@ Without an `event_time` query parameter, `/status_changes` shall return a `400 B
 | `reserved` | A customer reserves a device (even if trip has not started yet) | `user_pick_up` | Customer reserves device |
 | `unavailable` | A device is on the street but becomes unavailable for customer use | `maintenance` | A device is no longer available due to equipment issues |
 | | | `low_battery` | A device is no longer available due to insufficient battery |
+| `inactive` | A device is unavailable for customer use, and may or may not be removed from the street  | `missing` | A device's current status as otherwise defined herein is no longer obtainable from provider records |
 | `removed` | A device is removed from the street and unavailable for customer use | `service_end` | Device removed from street because service has ended for the day (if program does not operate 24/7) |
 | | | `rebalance_pick_up` | Device removed from street and will be placed at another location to rebalance service |
 | | | `maintenance_pick_up` | Device removed from street so it can be worked on |
